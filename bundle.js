@@ -112,7 +112,7 @@
 		var devices = this.devices;
 		var devicesLength = devices.length;
 		var userAgent = navigator.userAgent.toLowerCase();
-		console.log(userAgent);
+
 		for (i = 0; i < devicesLength; i++) {
 			if(userAgent.search(devices[i]) > -1) {
 				return true;
@@ -246,8 +246,6 @@
 	    $(window).on('popstate', function (e) {
 	        var state = e.originalEvent.state;
 	        var createdState = history.createdState;
-
-	        console.log(state, history);
 
 	        if (state !== null) {
 	            document.title = state.title;
