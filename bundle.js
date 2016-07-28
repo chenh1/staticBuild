@@ -702,7 +702,9 @@
 	 * Binds event listener for click on the magic hat
 	 */
 	magicHatAnimations.bindEventListeners = function() {
-		magicHatContainer.addEventListener('click', magicHatAnimations.startAnimation);
+		if (magicHatContainer !== null) {
+			magicHatContainer.addEventListener('click', magicHatAnimations.startAnimation);
+		}
 	};
 
 
