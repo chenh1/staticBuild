@@ -397,11 +397,12 @@ body {
         width: 100%; }
     .work-content .portfolio-item .info,
     .portfolio-nav .portfolio-item .info {
+      align-items: center;
       box-sizing: border-box;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 10% 15%;
+      padding: 10% 0;
       text-align: center;
       transition: .3s; }
       @media screen and (min-width: 1024px) {
@@ -418,9 +419,42 @@ body {
       .work-content .portfolio-item .info .header-three,
       .portfolio-nav .portfolio-item .info .header-three {
         margin-bottom: 0; }
+    .work-content .portfolio-item.amma .paragraph-one,
+    .portfolio-nav .portfolio-item.amma .paragraph-one {
+      width: 200px; }
+      @media screen and (min-width: 414px) {
+        .work-content .portfolio-item.amma .paragraph-one,
+        .portfolio-nav .portfolio-item.amma .paragraph-one {
+          width: 280px; } }
+      @media screen and (min-width: 1024px) {
+        .work-content .portfolio-item.amma .paragraph-one,
+        .portfolio-nav .portfolio-item.amma .paragraph-one {
+          width: 300px; } }
+    .work-content .portfolio-item.dignity-meals .paragraph-one,
+    .portfolio-nav .portfolio-item.dignity-meals .paragraph-one {
+      width: 224px; }
+      @media screen and (min-width: 414px) {
+        .work-content .portfolio-item.dignity-meals .paragraph-one,
+        .portfolio-nav .portfolio-item.dignity-meals .paragraph-one {
+          width: 300px; } }
+      @media screen and (min-width: 1024px) {
+        .work-content .portfolio-item.dignity-meals .paragraph-one,
+        .portfolio-nav .portfolio-item.dignity-meals .paragraph-one {
+          width: 340px; } }
     .work-content .portfolio-item.abundant-life .paragraph-one,
     .portfolio-nav .portfolio-item.abundant-life .paragraph-one {
-      padding: 0 12%; }
+      width: 230px; }
+      @media screen and (min-width: 1024px) {
+        .work-content .portfolio-item.abundant-life .paragraph-one,
+        .portfolio-nav .portfolio-item.abundant-life .paragraph-one {
+          width: 260px; } }
+    .work-content .portfolio-item.graphic-design .paragraph-one,
+    .portfolio-nav .portfolio-item.graphic-design .paragraph-one {
+      width: 240px; }
+      @media screen and (min-width: 1024px) {
+        .work-content .portfolio-item.graphic-design .paragraph-one,
+        .portfolio-nav .portfolio-item.graphic-design .paragraph-one {
+          width: 260px; } }
 
 .about-content .about-image-container {
   background-color: gray;
