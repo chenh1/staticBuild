@@ -415,6 +415,9 @@ body {
           .work-content .portfolio-item .info:hover,
           .portfolio-nav .portfolio-item .info:hover {
             opacity: 1; } }
+      .work-content .portfolio-item .info .header-three,
+      .portfolio-nav .portfolio-item .info .header-three {
+        margin-bottom: 0; }
     .work-content .portfolio-item.abundant-life .paragraph-one,
     .portfolio-nav .portfolio-item.abundant-life .paragraph-one {
       padding: 0 12%; }
