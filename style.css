@@ -194,7 +194,6 @@ body {
   align-items: flex-end;
   box-sizing: border-box;
   display: flex;
-  font-size: 14px;
   height: 99px;
   justify-content: space-between;
   opacity: .9;
@@ -239,21 +238,27 @@ body {
       color: #E5308A; }
     .header .logo img {
       margin-bottom: 5px;
-      margin-left: 8px;
+      margin-left: 3px;
       width: 52px; }
+      @media screen and (min-width: 768px) {
+        .header .logo img {
+          margin-left: 8px; } }
     .header .logo .page-name {
       color: #2D3D67;
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 100;
       margin: 0;
       min-width: 62px; }
+      @media screen and (min-width: 768px) {
+        .header .logo .page-name {
+          font-size: 16px; } }
   .header .nav-menu {
-    font-size: 14px;
     margin: 0;
     list-style-type: none;
     padding: 0; }
     .header .nav-menu li {
       display: inline;
+      font-size: 14px;
       margin-left: 8px; }
       @media screen and (min-width: 414px) {
         .header .nav-menu li {
@@ -261,9 +266,10 @@ body {
       @media screen and (min-width: 564px) {
         .header .nav-menu li {
           margin-left: 50px; } }
-      @media screen and (min-width: 564px) {
+      @media screen and (min-width: 768px) {
         .header .nav-menu li {
-          margin-left: 86px; } }
+          font-size: 16px;
+          margin-left: 60px; } }
 
 .main-content {
   transition: .2s; }
@@ -285,7 +291,8 @@ body {
         padding: 0 9.7%; } }
     @media screen and (min-width: 1024px) {
       .main-content .intro-content {
-        padding: 0 2%; } }
+        margin-top: 130px;
+        padding: 0 2% 50px; } }
     .main-content .intro-content .intro-text {
       color: #2D3D67;
       flex-basis: 50%;
@@ -298,7 +305,7 @@ body {
           padding: 0; } }
       @media screen and (min-width: 958px) {
         .main-content .intro-content .intro-text {
-          font-size: 24px; } }
+          font-size: 20px; } }
     .main-content .intro-content .magic-hat {
       margin-bottom: 14px; }
       @media screen and (min-width: 768px) {
@@ -317,7 +324,7 @@ body {
       .main-content .intro-content .magic-hat img {
         cursor: pointer;
         vertical-align: bottom;
-        width: 36px; }
+        width: 30px; }
         .main-content .intro-content .magic-hat img:hover {
           -webkit-animation: hatGlow 1s infinite;
           animation: hatGlow 1s infinite; }
@@ -408,6 +415,9 @@ body {
           .work-content .portfolio-item .info:hover,
           .portfolio-nav .portfolio-item .info:hover {
             opacity: 1; } }
+    .work-content .portfolio-item.abundant-life .paragraph-one,
+    .portfolio-nav .portfolio-item.abundant-life .paragraph-one {
+      padding: 0 12%; }
 
 .about-content .about-image-container {
   background-color: gray;
