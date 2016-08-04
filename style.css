@@ -312,10 +312,10 @@ body {
         .main-content .intro-content .magic-hat {
           margin-bottom: 0; } }
       .main-content .intro-content .magic-hat .rabbit-window {
-        height: 26px;
+        height: 29.4px;
         overflow: hidden;
         position: absolute;
-        transform: translateY(193%); }
+        transform: translateY(197%); }
         .main-content .intro-content .magic-hat .rabbit-window img {
           transform: translateY(-100%) rotateZ(180deg);
           transition: 1.5s; }
