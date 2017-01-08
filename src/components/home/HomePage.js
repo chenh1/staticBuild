@@ -5,9 +5,7 @@ class HomePage extends React.Component {
   render() {
     return (
       <div className="jumbotron">
-        <h1>Pluralsight</h1>
-        <p>React, Redux, ES6</p>
-        <Link to="about" className="btn btn-primary btn-lg">Learn more</Link>
+        
       </div>
     );
   }
