@@ -1,5 +1,9 @@
-@import "sass/test";
-
-p {
-    color: white;
-}
+@import "sass/variables";
+@import "sass/styleguide";
+@import "sass/wand-click";
+@import "sass/animate-classes";
+@import "sass/header";
+@import "sass/main-content";
+@import "sass/about-content";
+@import "sass/standard-article";
+@import "sass/footer";

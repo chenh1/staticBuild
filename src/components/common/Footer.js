@@ -8,20 +8,20 @@ class Footer extends React.Component{
             <ul className="footer-list">
                 <li>
                     <a id="mailLink" className="footer-links">
-                        <img src="../assets/icons/email.png" data-src="../assets/icons/email-hover.png" alt="Email"></img>
+                        <img src={require("../../assets/icons/email.png")} data-src="../assets/icons/email-hover.png" alt="Email"></img>
                     </a>
                 </li>
                     <a data-link-type="externalLink" href="https://www.linkedin.com/in/tracy-lin" className="footer-links page-link">
-                        <img src="../assets/icons/linkedin.png" data-src="../assets/icons/linkedin-hover.png" alt="LinkedIn"></img>
+                        <img src={require("../../assets/icons/linkedin.png")} data-src="../assets/icons/linkedin-hover.png" alt="LinkedIn"></img>
                     </a>
                 <li>
                     <a data-link-type="externalLink" href="https://medium.com/@tracy.lin" className="footer-links page-link">
-                        <img src="../assets/icons/medium.png" data-src="../assets/icons/medium-hover.png" alt="Medium"></img>
+                        <img src={require("../../assets/icons/medium.png")} data-src="../assets/icons/medium-hover.png" alt="Medium"></img>
                     </a>
                 </li>
                 <li>
                     <a data-link-type="externalLink" href="http://cargocollective.com/tracylin" className="footer-links page-link">
-                        <img src="../assets/icons/cargo.png" data-src="../assets/icons/cargo-hover.png" alt="Cargo"></img>
+                        <img src={require("../../assets/icons/cargo.png")} data-src="../assets/icons/cargo-hover.png" alt="Cargo"></img>
                     </a>
                 </li>
             </ul>

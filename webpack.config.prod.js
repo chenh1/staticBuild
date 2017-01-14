@@ -32,9 +32,35 @@ export default {
       {test: /\.js$/, include: path.join(__dirname, 'src'), loaders: ['babel']},
       {test: /(\.css)$/, loader: ExtractTextPlugin.extract("css?sourceMap")},
       {test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: 'file'},
-      {test: /\.(woff|woff2)$/, loader: 'url?prefix=font/&limit=5000'},
+      {test: /\.(otf|woff|woff2|pdf)$/, loader: 'file-loader'},
       {test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=application/octet-stream'},
-      {test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=image/svg+xml'}
+      {test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=image/svg+xml'},
+      {
+        test: /.*\.(gif|png|jpe?g|svg)$/i,
+        loaders: [
+          'file?hash=sha512&digest=hex&name=[name].[ext]',
+          'image-webpack'
+        ]
+      }
     ]
+  },
+  imageWebpackLoader: {
+    mozjpeg: {
+      quality: 65
+    },
+    pngquant:{
+      quality: "65-90",
+      speed: 4
+    },
+    svgo:{
+      plugins: [
+        {
+          removeViewBox: false
+        },
+        {
+          removeEmptyAttrs: false
+        }
+      ]
+    }
   }
 };

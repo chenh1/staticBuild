@@ -6,7 +6,7 @@ class Header extends React.Component {
     return (
       <nav id="header" className="header">
         <IndexLink to="/" id="logo" className="logo" activeClassName="active">
-          <img src="../assets/logo.png" alt="Tracy Lin Logo" />
+          <img src={require("../../assets/logo.png")} alt="Tracy Lin Logo" />
           <h1 className="page-name">
             Tracy Lin
           </h1>
@@ -15,7 +15,7 @@ class Header extends React.Component {
         <ul className="nav-menu">
           <li><Link to="/work" className="page-link" activeClassName="active">Work</Link></li>
           <li><Link to="/about" className="page-link" activeClassName="active">About</Link></li>
-          <li><a href="/resume.pdf" className="page-link" activeClassName="active">Resume</a></li>
+          <li><a href={require("../../assets/resume.pdf")} className="page-link" activeClassName="active">Resume</a></li>
         </ul>
       </nav>
     );

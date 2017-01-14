@@ -1,0 +1,61 @@
+.standard-article {
+	display: flex;
+	flex-direction: column;
+
+	@media screen and (min-width: $sm) {
+		//margin-top: 47px;
+		padding: 0 9.2%;
+	}
+
+	@media screen and (min-width: $md) {
+		padding: 0 9.7%;
+	}
+
+	@media screen and (min-width: $xl) {
+		padding: 0 2%; //padding: 0 19.6%; 
+	}	
+
+	//Article images are split into three settings: regular, large, and full.
+	//Regular: Has no unique class, default is to stay within the article.
+	//Large: Slightly larger than regular. Will always be 1024px or full width.
+	//Full: Stays full on all viewports.
+
+	.article-image {
+		align-self: center;
+		flex-basis: auto;
+		flex-shrink: 0;
+		margin-top: 53px;
+		width: 100%;
+
+		&.large {
+			max-width: 1200px; //1024px
+			width: 100vw;
+		}
+
+		&.full {
+			width: 100vw;
+		}
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.header-three {
+		margin-top: 53px;
+	}
+
+	.paragraph-one,
+	.list-one,
+	.sub-header-one {
+		margin-top: 30px;
+	}
+
+	.text-wrapper {
+		padding: 0 13%;
+
+		@media screen and (min-width: $sm) {
+			padding: 0;
+		}
+	}
+}

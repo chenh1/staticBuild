@@ -1,0 +1,24 @@
+.footer {
+	margin-top: 82px;
+	margin-bottom: 82px;
+
+	.footer-list {
+		align-items: center;
+		display: flex;
+		font-size: 14px;
+		justify-content: center;
+		list-style-type: none;
+		padding: 0;
+		text-align: center;
+
+		li {
+			color: $navy;
+			width: 50px;
+
+			.footer-links {
+				cursor: pointer;
+				text-decoration: none;
+			}
+		}
+	}
+}
