@@ -5,7 +5,7 @@ class WorkNav extends React.Component{
     render() {
         return(
             <div className="work-content">
-                <a data-title="AMMA: An asthma monitoring an management app" className="amma portfolio-item page-link" href="/amma/">
+                <Link to="amma" className="amma portfolio-item page-link">
                     <div className="image">
                         <img src={require("../../assets/amma-main.png")} alt="AMMA"></img>
                     </div>
@@ -15,9 +15,9 @@ class WorkNav extends React.Component{
                             Helping asthma sufferers manage and monitor their illness day to day
                         </p>
                     </div>
-                </a>
+                </Link>
 
-                <a data-title="Dignity Meals" className="dignity-meals portfolio-item page-link" href="/dignity-meals/">
+                <Link to="dignityMeals" className="dignity-meals portfolio-item page-link">
                     <div className="image">
                         <img src={require("../../assets/dignity-main.png")} alt="Dignity Meals"></img>
                     </div>
@@ -27,9 +27,9 @@ class WorkNav extends React.Component{
                             A food rescue and redistribution app focused on reducing hunger and food waste
                         </p>
                     </div>
-                </a>
+                </Link>
 
-                <a data-title="Abundant Life" className="abundant-life portfolio-item page-link" href="/abundant-life/">
+                <Link to="abundantLife" className="abundant-life portfolio-item page-link">
                     <div className="image">
                         <img src={require("../../assets/alife.png")} alt="Abundant Life"></img>
                     </div>
@@ -39,9 +39,9 @@ class WorkNav extends React.Component{
                             Coming soon!
                         </p>
                     </div>
-                </a>
+                </Link>
 
-                <a data-link-type="externalLink" data-title="Graphic Design" className="graphic-design portfolio-item page-link" href="http://cargocollective.com/tracylin">
+                <a className="graphic-design portfolio-item page-link" href="http://cargocollective.com/tracylin">
                     <div className="image">
                         <img src={require("../../assets/graphic-design.png")} alt="Graphic Design"></img>
                     </div>
