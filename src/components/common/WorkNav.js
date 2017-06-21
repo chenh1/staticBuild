@@ -41,7 +41,7 @@ class WorkNav extends React.Component{
                     </div>
                 </Link>
 
-                <a className="graphic-design portfolio-item page-link" href="http://cargocollective.com/tracylin">
+                <Link to="http://cargocollective.com/tracylin" className="graphic-design portfolio-item page-link">
                     <div className="image">
                         <img src={require("../../assets/graphic-design.png")} alt="Graphic Design"></img>
                     </div>
@@ -51,7 +51,7 @@ class WorkNav extends React.Component{
                             Select visual design projects that I've produced in the past years
                         </p>
                     </div>
-                </a>
+                </Link>
             </div>
         );
     }
