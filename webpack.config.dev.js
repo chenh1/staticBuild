@@ -32,7 +32,7 @@ export default {
       {test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=application/octet-stream'},
       {test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=image/svg+xml'},
       {
-        test: /.*\.(gif|png|jpe?g|svg)$/i,
+        test: /.*\.(gif|png|jpg|svg)$/i,
         loaders: [
           'file?hash=sha512&digest=hex&name=[name].[ext]',
           'image-webpack'

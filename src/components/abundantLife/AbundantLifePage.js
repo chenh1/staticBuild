@@ -5,7 +5,7 @@ class AbundantLifePage extends React.Component {
     return (
       <div>
         <h1>Abundant Life</h1>
-        <p>About React, Redux, ES6</p>
+        <p>Coming Soon!</p>
       </div>
     );
   }
