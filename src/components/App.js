@@ -3,7 +3,7 @@ import Header from './common/Header';
 import Footer from './common/Footer';
 //import WorkNav from './common/WorkNav';
 import WorkNav from './ecosystems/WorkNav';
-import WorkContentApi from '../api/workContent';
+import WorkContentApi from '../api/workContentServices';
 
 class App extends React.Component {
   constructor(context) {

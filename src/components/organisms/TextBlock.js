@@ -1,21 +1,27 @@
 import React from 'react';
+import Paragraph from '../atoms/Paragraph';
+import SubHeader from '../atoms/SubHeader';
+import BulletList from '../molecules/BulletList';
 
 const TextBlock = ({elements}) => {
     return (
         <div className="text-wrapper">
-            {elements.map(element => {
+            {elements.map((element, index) => {
                 switch (element.type) {
                     case 'paragraph':
-                        <Paragraph />
-                        break;
+                        return (
+                            <Paragraph key={"text" + index} text={element.text}/>
+                        );
                     case 'subHeader':
-                        <SubHeader />
-                        break;
+                        return (
+                            <SubHeader key={"text" + index} customClass={element.customClass} text={element.text}/>
+                        );
                     case 'bulletList':
-                        <BulletList />
-                        break;
+                        return (
+                            <BulletList key={"text" + index} listItems={element.listItems}/>
+                        );
                     default:
-                        break;
+                        return;
                 }
             })}
         </div>
