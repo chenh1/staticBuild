@@ -1,8 +1,8 @@
 import React from 'react';
 
-const SubHeader = ({styleClass, text}) => {
+const SubHeader = ({text}) => {
     return (
-        <h3 className={styleClass}>
+        <h3 className="header-three">
             {text}
         </h3>
     )
