@@ -8,7 +8,12 @@ const WorkNav = ({workItems}) => {
                 return (
                     <WorkItem 
                         key={'workItem' + index}
-                        data={workItem}
+                        path={workItem.path}
+                        customClass={workItem.customClass}
+                        imageSrc={workItem.imageSrc}
+                        alt={workItem.alt}
+                        subHeader={workItem.subHeader}
+                        description={workItem.description}
                     />
                 )
             })}

@@ -2,11 +2,11 @@ import React from 'react';
 import { ImageContainer, PortfolioInfo } from '../molecules';
 import { Link, IndexLink } from 'react-router';
 
-const WorkItem = ({data}) => {
+const WorkItem = ({path, customClass, imageSrc, alt, subHeader, description}) => {
     return (
-        <Link to={data.path} className="portfolio-item page-link">
-            <ImageContainer customClass="image" imageSrc={data.imageSrc} alt={data.alt}/>
-            <PortfolioInfo subHeaderText={data.subHeader} paragraphText={data.description}/>
+        <Link to={path} className={customClass}>
+            <ImageContainer customClass="image" imageSrc={imageSrc} alt={alt}/>
+            <PortfolioInfo subHeaderText={subHeader} paragraphText={description}/>
         </Link>
     );
 };
