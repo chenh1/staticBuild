@@ -1,7 +1,6 @@
 import React, {PropTypes} from 'react';
 import Header from './common/Header';
 import Footer from './common/Footer';
-//import WorkNav from './common/WorkNav';
 import WorkNav from './ecosystems/WorkNav';
 import WorkContentApi from '../api/workContentServices';
 import TextContentApi from '../api/textContentServices';
@@ -12,7 +11,15 @@ class App extends React.Component {
 
     this.state = {
       workItems: [],
-      AmmaPage: []
+      AmmaPage: [],
+      DignityMealsPage: [],
+      AbundantLifePage: [],
+      AboutPage: [],
+      headerNavItems: [
+        {path: "/work", linkClass:"page-link", activeClassName:"active", text:"Work"},
+        {path: "/about", linkClass:"page-link", activeClassName:"active", text:"About"},
+        {path: require("../assets/resume.pdf"), linkClass:"page-link", activeClassName:"active", text:"Resume"}
+      ]
     }
   }
 
@@ -41,7 +48,7 @@ class App extends React.Component {
 
     return (
       <div className="main-container">
-        <Header/>
+        <Header listItems={this.state.headerNavItems}/>
         <div id="mainContent" className="main-content">
           {children}
         </div>
