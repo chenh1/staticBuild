@@ -1,8 +1,7 @@
 import React, {PropTypes} from 'react';
 import { Link, IndexLink } from 'react-router';
 
-class Footer extends React.Component{
-  render() {
+const Footer = ({}) => {
     return (
         <div className="footer">
             <ul className="footer-list">
@@ -27,7 +26,6 @@ class Footer extends React.Component{
             </ul>
         </div>
     );
-  }
 }
 
 export default Footer;
