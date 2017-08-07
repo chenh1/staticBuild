@@ -1,6 +1,5 @@
 import React from 'react';
-import Paragraph from '../atoms/Paragraph';
-import SubHeader from '../atoms/SubHeader';
+import {Paragraph, SubHeader} from '../atoms';
 import BulletList from '../molecules/BulletList';
 
 const TextBlock = ({elements}) => {

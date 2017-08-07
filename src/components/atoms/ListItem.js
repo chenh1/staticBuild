@@ -7,7 +7,7 @@ const ListItem = ({text, path, linkClass, linkActiveClass}) => {
             {path ? 
                 <Link to={path} className={linkClass} activeClassName={linkActiveClass}>{text}</Link>
                 :
-                {text}
+                <span>{text}</span>
             }
         </li>
     );
