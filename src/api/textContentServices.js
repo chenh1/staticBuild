@@ -415,12 +415,380 @@ const textContent = {
                 }
             ]
         } //end text block (24)
-    ] //end content array
+    ], //end amma text content
+    "dignityMealsContent": [
+        {
+            "type": "image",
+            "customClass": "article-image large",
+            "imageSrc": require("../assets/dignity-meals/Dignity-Meals.png"),
+            "alt": "Dignity Meals"
+        }, //end image block (0)
+        {
+            "type": "text",
+            "content": [
+                {
+                    "type": "subHeader",
+                    "text": "Dignity Meals: A Case Study on Eliminating Hunger and Food Waste"
+                },
+                {
+                    "type": "subHeader",
+                    "text": "What We Know"
+                },
+                {
+                    "type": "paragraph",
+                    "text": [
+                        "Food waste is a big, still growing, problem in the United States. In 2013, we disposed more than 35 million tons of food, according to the Environmental Protection Agency. Once in landfills, food breaks down to produce methane, a potent greenhouse gas which contributes to climate change. In the USA, ",
+                        {
+                            "embeddedLink": "http://www.worldfooddayusa.org/food_waste_the_facts",
+                            "text": "30-40% of the food supply is wasted,"
+                        },
+                        " equaling more than 20 pounds of food per person per month."
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "text": [
+                        "On the flip side, ",
+                        {
+                            "embeddedLink": "http://www.worldhunger.org/hunger-in-america-2015-united-states-hunger-and-poverty-facts/",
+                            "text": "hunger and poverty remain high"
+                        },
+                        " in the United States. 1 in 6 Americans struggle with the reality of hunger and food insecurity. ",
+                        {
+                            "embeddedLink": "http://www.feedingamerica.org/hunger-in-america/impact-of-hunger/hunger-and-poverty/hunger-and-poverty-fact-sheet.html",
+                            "text": "48.1 million Americans lived in food insecure households,"
+                        },
+                        " including 32.8 million adults and 15.3 million children."
+                    ]
+                },
+                {
+                    "type": "subHeader",
+                    "text": "Problem"
+                },
+                {
+                    "type": "paragraph",
+                    "text": ["Local food merchants and grocers are throwing away significant amounts of food each day while needy and impoverished families, children and elderly could use this normally wasted food."]
+                },
+                {
+                    "type": "subHeader",
+                    "text": "Research"
+                },
+                {
+                    "type": "paragraph",
+                    "text": ["To figure out which problems within the food collection and distribution space to tackle, I set out to answer the following questions:"]
+                },
+                {
+                    "type": "bulletList",
+                    "listItems": [
+                        "What is not effective or can be improved upon within the existing market?",
+                        "What is the recipient's (institution and/or individual) experience like? How can Dignity Meals create a safe space for recipients?",
+                        "Who are the donors (suppliers) with the highest impact?",
+                        "How is the quality of food measured?",
+                        "What are the donors' motivations?"
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "text": [
+                        "To capture informed empathy, I sought out stakeholders on each side: donors (suppliers), distributors, and recipients. I conducted secondary research, competitive analysis, surveyed and interviewed individuals, summarizing the methodologies and findings ",
+                        {
+                            "embeddedLink": "https://docs.google.com/document/d/1-bvpjkrDTklH3tsl-BfLh9r8Wmxkw7zXCXpBXlanJws/edit",
+                            "text": "here."
+                        }
+                    ]
+                },
+                {
+                    "type": "subHeader",
+                    "text": "Research Findings"
+                },
+                {
+                    "type": "bulletList",
+                    "listItems": [
+                        "Food quality is commonly determined by visual cues: does the food look good?",
+                        "Food quality is measured by three key factors: time, temperature, and quantity (capacity to refrigerate, what can be picked up, and how quickly it can be distributed).",
+                        "Donors are motivated by willingness (social responsibility and community care) and assurance that they won't be held liable.",
+                        "Some donors are still not aware nor informed of laws in effect (Good Samaritan Food Donation Act and AB-1826 Bill) and carry misunderstanding about liabilities.",
+                        "Restaurants and grocery stores are among the donors (suppliers) with the highest impact.",
+                        "Although there is some consistency with certain donors, volume of food being donated day to day fluctuates and is generally unknown, which creates complexities in the logistics of matching to agencies/recipients.",
+                        "The type of food donation (prepared food, perishables, frozen food) has to match the needs and capacities of the food recipients.",
+                        "Good UX and a streamlined process of working out logistics can be improved upon in the existing market.",
+                        "Timing is everything: matching what is needed and when, what is available and who can pick it up, syncing up routes between donors and recipients to be in close proximity.",
+                        "Distributors face challenges with logistics (coordinating between donors and recipients and making sure there is a good match between needs), educating and equipping donors, funding (financial means to bring on more people to help), and ensuring food safety and timeliness in consumption for recipients."
+                    ]
+                },
+                {
+                    "type": "subHeader",
+                    "text": "Strategy"
+                },
+                {
+                    "type": "paragraph",
+                    "text": [
+                        "Analyzing the findings, I developed a prioritized ",
+                        {
+                            "embeddedLink": "https://docs.google.com/document/d/1cO7AN4ZjCz2cH01PXux8JMZNahRPdZtWJjej4ywC7BI/edit",
+                            "text": "product roadmap"
+                        },
+                        " outlining proposed features and functionality for Version 1.0 of the Dignity Meals app, and created a UX Strategy Blueprint."
+                    ]
+                }
+            ]
+        }, //end text block (1)
+        {
+            "type": "image",
+            "customClass": "article-image full",
+            "imageSrc": require("../assets/dignity-meals/1-Strategy-Blueprints.png"),
+            "alt": "Strategy Blueprints",
+            "caption": "UX Strategy Blueprint for Dignity Meals"
+        }, //end image block (2)
+        {
+            "type": "text",
+            "content": [
+                {
+                    "type": "paragraph",
+                    "text": ["From there I created a sitemap to show the relationship between features and the touch points for each user type (donor, volunteer/distributor, agency/recipient)."]
+                }
+            ]
+        }, //end text block (3)
+        {
+            "type": "image",
+            "customClass": "article-image large",
+            "imageSrc": require("../assets/dignity-meals/2-Sitemap.png"),
+            "alt": "Sitemap",
+            "caption": "Dignity Meals Sitemap"
+        }, //end image block (4)
+        {
+            "type": "text",
+            "content": [
+                {
+                    "type": "paragraph",
+                    "text": ["Working off the structure of the sitemap, I create three major user tasks within the app: 1) donor side&mdash;making a donation, 2) agency/recipient side&mdash;finding food, and 3) picking up and redistributing food."]
+                }
+            ]
+        }, //end text block (5)
+        {
+            "type": "image",
+            "customClass": "article-image full",
+            "imageSrc": require("../assets/dignity-meals/3-User-Flows.png"),
+            "alt": "User Flows",
+            "caption": "Dignity Meals User Flows"
+        }, //end image block (6)
+        {
+            "type": "text",
+            "content": [
+                {
+                    "type": "subHeader",
+                    "text": "Wireframes and Testing"
+                },
+                {
+                    "type": "paragraph",
+                    "text": [
+                        "I documented ",
+                        {
+                            "embeddedLink": "https://docs.google.com/document/d/1eMRPp9Xbybz6Bmgs4wWxdmtrSYaviC9s-6IHA9tV9TI/edit",
+                            "text": "UI requirements"
+                        },
+                        " to guide what the wireframes would contain for each user type. After I received feedback on initial wireframes, I sketched out three main user flows on which the subsequent iterations are based."
+                    ]
+                }
+            ]
+        }, //end text block (7)
+        {
+            "type": "image",
+            "customClass": "article-image large",
+            "imageSrc": require("../assets/dignity-meals/4-Sketches.png"),
+            "alt": "User Flows Sketches",
+            "caption": "Sketches for Dignity Meals User Flows"
+        }, //end image block (8)
+        {
+            "type": "image",
+            "customClass": "article-image full",
+            "imageSrc": require("../assets/dignity-meals/5-Wireframes.png"),
+            "alt": "Wireframes V2",
+            "caption": "Dignity Meals Wireframes V2"
+        }, //end image block (9)
+        {
+            "type": "text",
+            "content": [
+                {
+                    "type": "paragraph",
+                    "text": ["I conducted and recorded usability tests on a rough paper prototype comprised of these wireframes. While participants understood what the majority of screens were about and easily picked up on the functionality of features, there were misunderstandings with the microcopy, questions about pickup photos and/or labels as a way to identify the food, and trouble with the scheduling (donation form) experience. A few questions brought up in the tests were considerations beyond the scope of the project but good things to think about nevertheless."]
+                },
+                {
+                    "type": "paragraph",
+                    "text": [
+                        "From ",
+                        {
+                            "embeddedLink": "https://docs.google.com/document/d/18UoG3ZGRtU_5naLgp4GEfHKk_xzxmFIp2t_m7lUinFg/edit",
+                            "text": "user feedback,"
+                        },
+                        " I made recommendations for the succeeding iterations."
+                    ]
+                },
+                {
+                    "type": "bulletList",
+                    "listItems": [
+                        "Improve microcopy&mdash;think about word usage; words should inform and clarify",
+                        'Anticipate the user\'s needs as she goes along (e.g. "Do you need help preparing this?", option to cancel a claim) and provide appropriate options',
+                        'Reassure the user with clear language (e.g. "Steve has confirmed this pickup. Please confirm pickup.")',
+                        "Only include information relevant to the primary tasks on a page",
+                        "Show and/or give users the option to see their activities and history",
+                        "If there's time, think about the opportunities within the app to delight"
+                    ]
+                },
+                {
+                    "type": "subHeader",
+                    "text": "Brand Identity"
+                }
+            ]
+        }, //end text block (10)
+        {
+            "type": "image",
+            "customClass": "article-image",
+            "imageSrc": require("../assets/dignity-meals/6-Logo-Style-Tiles.png"),
+            "alt": "Logo and Style Tiles",
+            "caption": "Dignity Meals Logo and Style Tile"
+        }, //end image block (11)
+        {
+            "type": "text",
+            "content": [
+                {
+                    "type": "paragraph",
+                    "text": ["I chose green for its trustworthiness and sense of groundedness, and orange for its friendliness, warmth, and inviting nature. I chose Proxima Nova for its functionality and legibility. I wanted the UI to remain light to convey cleanliness, spaciousness, and freshness."]
+                },
+                {
+                    "type": "subHeader",
+                    "text": "Evaluating the Donation Form Experience"
+                },
+                {
+                    "type": "paragraph",
+                    "text": ['The initial scrolling format (Variant 1) in making a donation made the navigation difficult to use. The user isn\'t able to see the CTA, "Post Donation" until he scrolled to the bottom, creating a sense of uncertainty of where he was, where he came from, and where he\'s going. I created the donation form as steps on a page (Variant 2), the clear winner upon testing.']
+                }
+            ]
+        }, //end text block (12)
+        {
+            "type": "image",
+            "customClass": "article-image full",
+            "imageSrc": require("../assets/dignity-meals/7-Variants.png"),
+            "alt": "Variants"
+        }, //end image block (13)
+        {
+            "type": "text",
+            "content": [
+                {
+                    "type": "subHeader",
+                    "text": "Weaving the User Stories Together"
+                },
+                {
+                    "type": "subHeader",
+                    "text": "Donor"
+                },
+                {
+                    "type": "paragraph",
+                    "text": ["Jordon, a regular food donor, is motivated by social and environmental responsibility and community care. He would like to donate the over-ripened avocados from the produce department he manages at the grocery store. He doesn't know who could use these avocados, an one-off donation, but doesn't want them to go to waste."]
+                }
+            ]
+        }, //end text block (14)
+        {
+            "type": "image",
+            "customClass": "article-image full",
+            "imageSrc": require("../assets/dignity-meals/8-Steps.png"),
+            "alt": "Jordon's Steps"
+        }, //end image block (15)
+        {
+            "type": "text",
+            "content": [
+                {
+                    "type": "subHeader",
+                    "text": "Agency"
+                },
+                {
+                    "type": "paragraph",
+                    "text": ["Lillian, a member of a local non-profit agency working directly with the needy and impoverished, is motivated to find any available food that her facility can accommodate. She logs into Dignity Meals to see what is available around her."]
+                }
+            ]
+        }, //end text block (16)
+        {
+            "type": "image",
+            "customClass": "article-image full",
+            "imageSrc": require("../assets/dignity-meals/9-Steps-2.png"),
+            "alt": "Lillian's Steps"
+        }, //end image block (17)
+        {
+            "type": "text",
+            "content": [
+                {
+                    "type": "subHeader",
+                    "text": "Volunteer"
+                },
+                {
+                    "type": "paragraph",
+                    "text": ["Steve, a Dignity Meals volunteer driver, is motivated to make a difference in his community. He was moved to get involved after encountering staggering statistics on poverty in his city and beyond. Upon joining Dignity Meals, he selected his pickup and delivery vicinity along with available days and hours to volunteer."]
+                }
+            ]
+        }, //end text block (18)
+        {
+            "type": "image",
+            "customClass": "article-image full",
+            "imageSrc": require("../assets/dignity-meals/10-Steps-3.png"),
+            "alt": "Steve's Steps"
+        }, //end image block (19)
+        {
+            "type": "text",
+            "content": [
+                {
+                    "type": "paragraph",
+                    "text": [
+                        "To see if those who were unfamiliar with the concept could follow along as they walked through the flows, I tested the aforementioned screens with ",
+                        {
+                            "embeddedLink": "https://usabilityhub.com/",
+                            "text": "UsabilityHub."
+                        }, 
+                        " I noted the following from the ",
+                        {
+                            "embeddedLink": "https://docs.google.com/document/d/1ixqLrZo-Cl_Niue6CV__No6gMIIkYbtxkiVBTU8vsm8/edit",
+                            "text": "test findings."
+                        }
+                    ]
+                },
+                {
+                    "type": "bulletList",
+                    "listItems": [
+                        "Donor flow: understood overall",
+                        'Agency flow: understood overall, but there was some confusion around what the "food board" was meant for (perhaps this was a result of not setting up the context for the participant). I would recommend iterating on how language can be clarified to inform and instruct.',
+                        "Volunteer flow: understood overall, but there was some confusion around the basic comprehension in the pickup and delivery routes. I would recommend iterating on the UI to rethink how present and next actions and its accompanying statuses can be made clearer."
+                    ]
+                },
+                {
+                    "type": "subHeader",
+                    "text": "Concluding Thoughts and Next Steps"
+                },
+                {
+                    "type": "paragraph",
+                    "text": ["To ensure the product's usability and pleasurability, I would take the following steps to move the project forward:"]
+                },
+                {
+                    "type": "bulletList",
+                    "listItems": [
+                        "Build a prototype and invite stakeholders on each side (donors, distributors, and recipients) to interact with it.",
+                        "Design the onboarding and new vendor sign-up experience. (To ensure food safety and quality, Dignity Meals is a members-only service; all users must be approved).."
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "text": ["The strength of Dignity Meals, a food collection and re-distribution service standing in the gap between food waste and hunger, lies within community-based principles. To extend Dignity Meals' influence, I would also reach out to local vendors and partner with distributors doing similar work."]
+                }
+            ]
+        } //end text block (20)
+    ] //end dignity meals text content
 };
 
 class TextContentApi {
     static getAmmaContent() {
         return textContent.ammaContent;
+    }
+
+    static getDignityMealsContent() {
+        return textContent.dignityMealsContent;
     }
 }
 
