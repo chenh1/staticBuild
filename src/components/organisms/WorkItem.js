@@ -1,6 +1,5 @@
 import React from 'react';
-import ImageContainer from '../molecules/ImageContainer';
-import PortfolioInfo from '../molecules/PortfolioInfo';
+import { ImageContainer, PortfolioInfo } from '../molecules';
 import { Link, IndexLink } from 'react-router';
 
 const WorkItem = ({data}) => {

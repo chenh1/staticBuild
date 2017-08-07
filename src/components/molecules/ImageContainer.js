@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from '../atoms/Image';
+import { Image } from '../atoms';
 
 const ImageContainer = ({customClass, imageSrc, alt, caption}) => {
     return (

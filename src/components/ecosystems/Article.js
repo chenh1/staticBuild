@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, IndexLink } from 'react-router';
-import TextBlock from '../organisms/TextBlock';
-import ImageContainer from '../molecules/ImageContainer';
+import { TextBlock } from '../organisms';
+import { ImageContainer } from '../molecules';
 
 const Article = ({articleItems}) => {
     return (

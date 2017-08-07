@@ -1,5 +1,5 @@
 import React from 'react';
-import ListItem from '../atoms/ListItem';
+import { ListItem } from '../atoms';
 
 const BulletList = ({styleClass = "list-one", listItems}) => {
     return (

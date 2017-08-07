@@ -1,5 +1,5 @@
 import React from 'react';
-import WorkItem from '../organisms/WorkItem';
+import { WorkItem } from '../organisms';
 
 const WorkNav = ({workItems}) => {
     return (

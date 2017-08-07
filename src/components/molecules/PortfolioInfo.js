@@ -1,6 +1,5 @@
 import React from 'react';
-import SubHeader from '../atoms/SubHeader';
-import Paragraph from '../atoms/Paragraph';
+import { SubHeader, Paragraph } from '../atoms';
 
 const PortfolioInfo = ({subHeaderText, paragraphText}) => {
     return (

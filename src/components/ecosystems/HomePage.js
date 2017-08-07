@@ -1,6 +1,6 @@
 import React from 'react';
-import Paragraph from '../atoms/Paragraph';
-import {Link} from 'react-router';
+import { Paragraph } from '../atoms';
+import { Link } from 'react-router';
 
 const HomePage = () => {
   return (
