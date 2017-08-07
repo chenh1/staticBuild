@@ -1,6 +1,6 @@
 import React, {PropTypes} from 'react';
-import Header from './common/Header';
-import Footer from './common/Footer';
+import Header from './ecosystems/Header';
+import Footer from './ecosystems/Footer';
 import WorkNav from './ecosystems/WorkNav';
 import WorkContentApi from '../api/workContentServices';
 import TextContentApi from '../api/textContentServices';
