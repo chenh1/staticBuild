@@ -1,31 +1,75 @@
 import React, {PropTypes} from 'react';
 import { Link, IndexLink } from 'react-router';
 
-const Footer = ({}) => {
-    return (
-        <div className="footer">
-            <ul className="footer-list">
-                <li>
-                    <a id="mailLink" className="footer-links">
-                        <img src={require("../../assets/icons/email.png")} data-src="../assets/icons/email-hover.png" alt="Email"></img>
-                    </a>
-                </li>
-                    <a data-link-type="externalLink" href="https://www.linkedin.com/in/tracy-lin" className="footer-links page-link">
-                        <img src={require("../../assets/icons/linkedin.png")} data-src="../assets/icons/linkedin-hover.png" alt="LinkedIn"></img>
-                    </a>
-                <li>
-                    <a data-link-type="externalLink" href="https://medium.com/@tracy.lin" className="footer-links page-link">
-                        <img src={require("../../assets/icons/medium.png")} data-src="../assets/icons/medium-hover.png" alt="Medium"></img>
-                    </a>
-                </li>
-                <li>
-                    <a data-link-type="externalLink" href="http://cargocollective.com/tracylin" className="footer-links page-link">
-                        <img src={require("../../assets/icons/cargo.png")} data-src="../assets/icons/cargo-hover.png" alt="Cargo"></img>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    );
+class Footer extends React.Component {
+    constructor() {
+        super();
+
+        this.state = {
+            icons: [
+                {
+                    alt: "email",
+                    link: "#",
+                    imageSrc: require("../../assets/icons/email.png"),
+                    regularImageSrc: require("../../assets/icons/email.png"),
+                    hoverImageSrc: require("../../assets/icons/email-hover.png")
+                },
+                {
+                    alt: "linkedIn",
+                    link: "https://www.linkedin.com/in/tracy-lin",
+                    imageSrc: require("../../assets/icons/linkedin.png"),
+                    regularImageSrc: require("../../assets/icons/linkedin.png"),
+                    hoverImageSrc: require("../../assets/icons/linkedin-hover.png")
+                },
+                {
+                    alt: "medium",
+                    link: "https://medium.com/@tracy.lin", 
+                    imageSrc: require("../../assets/icons/medium.png"),
+                    regularImageSrc: require("../../assets/icons/medium.png"),
+                    hoverImageSrc: require("../../assets/icons/medium-hover.png")
+                },
+                {
+                    alt: "cargo",
+                    link: "http://cargocollective.com/tracylin", 
+                    imageSrc: require("../../assets/icons/cargo.png"),
+                    regularImageSrc: require("../../assets/icons/cargo.png"),
+                    hoverImageSrc: require("../../assets/icons/cargo-hover.png")
+                }
+            ]
+        }
+
+        this.iconHover = this.iconHover.bind(this);
+    }
+
+    iconHover(e) {
+        let stateCopy = Object.assign({}, this.state);
+        let index = e.currentTarget.getAttribute('data-index');
+        let icon = stateCopy.icons[index];
+        icon.imageSrc = e.type === "mouseover" ?
+            icon.hoverImageSrc : icon.regularImageSrc
+
+        this.setState(stateCopy);
+    }
+
+    render() {
+        return (
+            <div className="footer">
+                <ul className="footer-list">
+                    {this.state.icons.map((icon, index) =>
+                        <li key={"footerLink" + index}>
+                            <a onMouseLeave={this.iconHover} 
+                                onMouseOver={this.iconHover} 
+                                data-index={index} 
+                                href={icon.link} 
+                                className="footer-links">
+                                <img src={icon.imageSrc} alt={icon.alt} />
+                            </a>
+                        </li>
+                    )}
+                </ul>
+            </div>
+        );
+    }
 }
 
 export default Footer;

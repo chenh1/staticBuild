@@ -78,6 +78,9 @@ body {
 .text-center {
   text-align: center; }
 
+.hidden {
+  display: none; }
+
 .main-container.header-docked {
   padding-top: 99px; }
   @media screen and (min-width: 768px) {

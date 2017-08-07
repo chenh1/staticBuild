@@ -99,6 +99,10 @@ body {
 	text-align: center;
 }
 
+.hidden {
+	display: none;
+}
+
 .main-container {
 	//For when the header is docked (removed from container)
 	//Padding is set in place to compensate header position change
