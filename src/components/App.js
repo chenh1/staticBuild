@@ -20,12 +20,16 @@ class App extends React.Component {
     const workItems = WorkContentApi.getWorkContent();
     const ammaArticleItems = TextContentApi.getAmmaContent();
     const dignityMealsArticleItems = TextContentApi.getDignityMealsContent();
+    const abundantLifeArticleItems = TextContentApi.getAbundantLifeContent();
+    const aboutArticleItems = TextContentApi.getAboutContent();
 
     this.setState({
       workItems: workItems,
       AmmaPage: ammaArticleItems,
-      DignityMealsPage: dignityMealsArticleItems
-    })
+      DignityMealsPage: dignityMealsArticleItems,
+      AbundantLifePage: abundantLifeArticleItems,
+      AboutPage: aboutArticleItems
+    });
   }
 
   render() {

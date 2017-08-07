@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Paragraph = ({text}) => {
+const Paragraph = ({customClass = "paragraph-one", text}) => {
     return (
-        <p className="paragraph-one">
+        <p className={customClass}>
             {text.map((textItem, index) => 
                 textItem.embeddedLink ? 
                     <a key={"embeddedLink" + index}

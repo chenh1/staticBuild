@@ -1,12 +1,12 @@
 import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 import App from './components/App';
-import HomePage from './components/home/HomePage';
-import AboutPage from './components/about/AboutPage';
+import HomePage from './components/ecosystems/HomePage';
+import AboutPage from './components/ecosystems/AboutPage';
 //import WorkPage from './components/work/WorkPage';
 import AmmaPage from './components/ecosystems/AmmaPage';
 import DignityMealsPage from './components/ecosystems/DignityMealsPage';
-import AbundantLifePage from './components/abundantLife/AbundantLifePage';
+import AbundantLifePage from './components/ecosystems/AbundantLifePage';
 
 export default (
   <Route path="/" component={App}>
