@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders BulletList with default list-one class 1`] = `
+<ul
+  className="list-one"
+>
+  <li>
+    <span>
+      list item 1
+    </span>
+  </li>
+  <li>
+    <span>
+      list item 2
+    </span>
+  </li>
+  <li>
+    <span>
+      list item 3
+    </span>
+  </li>
+</ul>
+`;
+
+exports[`renders BulletList with text 1`] = `
+<ul
+  className="list-one"
+>
+  <li>
+    <span>
+      list item 1
+    </span>
+  </li>
+  <li>
+    <span>
+      list item 2
+    </span>
+  </li>
+  <li>
+    <span>
+      list item 3
+    </span>
+  </li>
+</ul>
+`;

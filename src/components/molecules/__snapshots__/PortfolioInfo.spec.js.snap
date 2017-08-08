@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders container for subheader and paragraph 1`] = `
+<div
+  className="info"
+>
+  <h3
+    className="header-three"
+  >
+    Mock sub-header text
+  </h3>
+  <p
+    className="paragraph-one"
+  >
+    Mock paragraph text
+  </p>
+</div>
+`;

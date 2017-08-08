@@ -4,6 +4,7 @@ const commonContent = {
         {path: "/about", linkClass:"page-link", activeClassName:"active", text:"About"},
         {path: require("../../assets/resume.pdf"), linkClass:"page-link", activeClassName:"active", text:"Resume"}
     ],
+    "headerLogo": require("../../assets/logo.png"),
     "footerIcons": [
         {
             alt: "email",

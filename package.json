@@ -69,5 +69,11 @@
   "repository": {
     "type": "git",
     "url": ""
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css|scss)$": "identity-obj-proxy",
+      "^.+\\.(pdf|png|gif|ttf|eot|svg|woff|woff2|ico)$": "<rootDir>/tools/mock.js"
+    }
   }
 }

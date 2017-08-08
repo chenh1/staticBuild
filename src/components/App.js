@@ -14,7 +14,8 @@ class App extends React.Component {
       about: [],
       mainContainerClasses: "main-container",
       headerClasses: "header",
-      headerNavItems: []
+      headerNavItems: [],
+      headerLogo: ""
     };
 
     this.cachedWorkContent = null;
@@ -27,6 +28,7 @@ class App extends React.Component {
     const abundantLifeArticleItems = TextContentApi.getAbundantLifeContent();
     const aboutArticleItems = TextContentApi.getAboutContent();
     const headerNavItems = CommonContentApi.getHeaderNavItems();
+    const headerLogo = CommonContentApi.getHeaderLogo();
 
     this.setState({
       workItems: workItems,
@@ -70,7 +72,7 @@ class App extends React.Component {
 
     return (
       <div className={this.state.mainContainerClasses}>
-        <Header headerClasses={this.state.headerClasses} headerNavItems={this.state.headerNavItems}/>
+        <Header headerLogo={this.state.headerLogo} headerClasses={this.state.headerClasses} headerNavItems={this.state.headerNavItems}/>
         <div id="mainContent" className="main-content">
           {children}
         </div>
