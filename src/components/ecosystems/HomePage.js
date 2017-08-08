@@ -16,12 +16,14 @@ class HomePage extends React.Component {
       hideRabbitDelay: 5000
     }
 
+    this.rabbitTimeout;
+    this.hatFlipTimeout;
     this.magicHatAnimation = this.magicHatAnimation.bind(this);
     this.hideRabbit = this.hideRabbit.bind(this);
   }
 
   hideRabbit() {
-    setTimeout(() => {
+    this.rabbitTimeout = setTimeout(() => {
       this.setState({
         rabbitClasses: ""
       });
@@ -40,7 +42,7 @@ class HomePage extends React.Component {
 
       this.hideRabbit();
 
-      setTimeout(() => {
+      this.hatFlipTimeout = setTimeout(() => {
         this.setState({
           containerClass: "magic-hat",
           magicHatClass: "",
@@ -49,6 +51,11 @@ class HomePage extends React.Component {
         });
       }, this.state.flipDelay);
     }
+  }
+
+  componentWillUnmount() {
+    clearTimeout(this.rabbitTimeout);
+    clearTimeout(this.hatFlipTimeout);
   }
 
   render() {

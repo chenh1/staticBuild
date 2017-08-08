@@ -3,7 +3,7 @@ import { WorkItem } from '../organisms';
 
 const WorkNav = ({workItems}) => {
     return (
-        <div className="work-content">
+        <div id="workContent" className="work-content">
             {workItems.map((workItem, index) => {
                 return (
                     <WorkItem 

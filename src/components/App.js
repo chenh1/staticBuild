@@ -7,13 +7,12 @@ class App extends React.Component {
   constructor(context) {
     super(context);
 
-    this.cachedArticleContent = null;
     this.state = {
       workItems: [],
-      AmmaPage: [],
-      DignityMealsPage: [],
-      AbundantLifePage: [],
-      AboutPage: [],
+      amma: [],
+      "dignity-meals": [],
+      "abundant-life": [],
+      about: [],
       mainContainerClasses: "main-container",
       headerClasses: "header",
       headerNavItems: [
@@ -23,14 +22,15 @@ class App extends React.Component {
       ]
     }
 
+    this.cachedWorkContent = null;
     this.checkPosition = this.checkPosition.bind(this);
   }
 
-  componentDidMount() {
-    this.cachedArticleContent = document.getElementById('articleContent');
+  componentDidUpdate() {
+    this.cachedWorkContent = document.getElementById('workContent');
     window.removeEventListener('scroll', this.checkPosition);
     
-    if (this.cachedArticleContent) {
+    if (this.cachedWorkContent) {
       window.addEventListener('scroll', this.checkPosition);
     }
   }
@@ -44,28 +44,31 @@ class App extends React.Component {
 
     this.setState({
       workItems: workItems,
-      AmmaPage: ammaArticleItems,
-      DignityMealsPage: dignityMealsArticleItems,
-      AbundantLifePage: abundantLifeArticleItems,
-      AboutPage: aboutArticleItems
+      amma: ammaArticleItems,
+      "dignity-meals": dignityMealsArticleItems,
+      "abundant-life": abundantLifeArticleItems,
+      about: aboutArticleItems
     });
   }
 
   checkPosition() {
-    let hasPassedBarrier = window.scrollY > this.cachedArticleContent.scrollHeight - window.innerHeight;
+    let hasPassedBarrier = window.scrollY > this.cachedWorkContent.offsetTop - window.innerHeight && 
+      this.cachedWorkContent.offsetTop > window.innerHeight;
     let headerClasses = hasPassedBarrier ? "header docked" : "header";
     let mainContainerClasses = hasPassedBarrier ? "main-container header-docked" : "main-container";
     
-    this.setState({
-      mainContainerClasses: mainContainerClasses,
-      headerClasses: headerClasses
-    });
+    if (this.state.headerClasses !== headerClasses) {
+      this.setState({
+        mainContainerClasses: mainContainerClasses,
+        headerClasses: headerClasses
+      });
+    }
   }
 
   render() {
     let children = React.Children.map(this.props.children, (child) => {
       return React.cloneElement(child, {
-        articleItems: this.state[child.type.name]
+        articleItems: this.state[child.props.routes[1].path]
       })
     })
 

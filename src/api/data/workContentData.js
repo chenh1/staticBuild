@@ -8,7 +8,7 @@ const workContent = [
         description: ["Helping asthma sufferers manage and monitor their illness day to day"]
     },
     {
-        path: "dignityMeals",
+        path: "dignity-meals",
         imageSrc: require("../../assets/dignity-main.png"),
         customClass: "dignity-meals portfolio-item page-link",
         alt: "Dignity Meals",
@@ -16,7 +16,7 @@ const workContent = [
         description: ["A food rescue and redistribution app focused on reducing hunger and food waste"]
     },
     {
-        path: "abundantLife",
+        path: "abundant-life",
         imageSrc: require("../../assets/alife.png"),
         customClass: "abundant-life portfolio-item page-link",
         alt: "Abundant Life",

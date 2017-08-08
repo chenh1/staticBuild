@@ -6,6 +6,6 @@ import routes from './routes';
 import './styles/style.css';
 
 render(
-  <Router history={browserHistory} routes={routes} />,
+  <Router onUpdate={() => window.scrollTo(0, 0)} history={browserHistory} routes={routes} />,
   document.getElementById('app')
 );
