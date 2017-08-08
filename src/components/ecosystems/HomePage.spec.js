@@ -30,13 +30,9 @@ describe('<HomePage />', () => {
 
         //act   
         wrapper.find('#magicHatContainer').simulate('click');
-
-        
-        jest.runAllTimers();
         jest.runTimersToTime(24000);
 
         //assert
-        console.log(setTimeout.mock)
         expect(wrapper.find('#magicHatContainer').hasClass('spin-hat')).toEqual(true);
     });
 });

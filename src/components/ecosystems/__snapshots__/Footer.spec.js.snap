@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> renders Footer 1`] = `
+<div
+  className="footer"
+>
+  <ul
+    className="footer-list"
+  >
+    <li>
+      <a
+        className="footer-links"
+        data-index={0}
+        href="#"
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+      >
+        <img
+          alt="email"
+          src=""
+        />
+      </a>
+    </li>
+    <li>
+      <a
+        className="footer-links"
+        data-index={1}
+        href="https://www.linkedin.com/in/tracy-lin"
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+      >
+        <img
+          alt="linkedIn"
+          src=""
+        />
+      </a>
+    </li>
+    <li>
+      <a
+        className="footer-links"
+        data-index={2}
+        href="https://medium.com/@tracy.lin"
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+      >
+        <img
+          alt="medium"
+          src=""
+        />
+      </a>
+    </li>
+    <li>
+      <a
+        className="footer-links"
+        data-index={3}
+        href="http://cargocollective.com/tracylin"
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+      >
+        <img
+          alt="cargo"
+          src=""
+        />
+      </a>
+    </li>
+  </ul>
+</div>
+`;
