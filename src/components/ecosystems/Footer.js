@@ -6,13 +6,15 @@ class Footer extends React.Component {
     constructor() {
         super();
 
-        this.state = {};
+        this.state = {
+            icons: []
+        };
         this.iconHover = this.iconHover.bind(this);
     }
 
     componentWillMount() {
         let newState = CommonContentApi.getFooterIcons();
-        this.setState(newState);
+        this.setState({ icons: newState });
     }
 
     iconHover(e) {
@@ -20,7 +22,7 @@ class Footer extends React.Component {
         let index = e.currentTarget.getAttribute('data-index');
         let icon = stateCopy.icons[index];
         icon.imageSrc = e.type === "mouseover" ?
-            icon.hoverImageSrc : icon.regularImageSrc
+            icon.hoverImageSrc : icon.regularImageSrc;
 
         this.setState(stateCopy);
     }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {PropTypes}  from 'react';
 import { Link, IndexLink } from 'react-router';
 
 const ListItem = ({text, path, linkClass, linkActiveClass}) => {
@@ -11,6 +11,13 @@ const ListItem = ({text, path, linkClass, linkActiveClass}) => {
             }
         </li>
     );
+};
+
+ListItem.propTypes = {
+    text: PropTypes.string.isRequired,
+    path: PropTypes.string,
+    linkClass: PropTypes.string,
+    linkActiveClass: PropTypes.string
 };
 
 export default ListItem;

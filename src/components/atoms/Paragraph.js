@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {PropTypes} from 'react';
 
 const Paragraph = ({customClass = "paragraph-one", text}) => {
     return (
@@ -16,6 +16,11 @@ const Paragraph = ({customClass = "paragraph-one", text}) => {
             )}
         </p>
     );
+};
+
+Paragraph.propTypes = {
+    customClass: PropTypes.string,
+    text: PropTypes.array
 };
 
 export default Paragraph;

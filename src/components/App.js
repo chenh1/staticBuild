@@ -20,16 +20,6 @@ class App extends React.Component {
     this.cachedWorkContent = null;
     this.checkPosition = this.checkPosition.bind(this);
   }
-
-  componentDidUpdate() {
-    this.cachedWorkContent = document.getElementById('workContent');
-    window.removeEventListener('scroll', this.checkPosition);
-    
-    if (this.cachedWorkContent) {
-      window.addEventListener('scroll', this.checkPosition);
-    }
-  }
-
   componentWillMount() {
     const workItems = WorkContentApi.getWorkContent();
     const ammaArticleItems = TextContentApi.getAmmaContent();
@@ -46,6 +36,15 @@ class App extends React.Component {
       about: aboutArticleItems,
       headerNavItems: headerNavItems
     });
+  }
+
+  componentDidUpdate() {
+    this.cachedWorkContent = document.getElementById('workContent');
+    window.removeEventListener('scroll', this.checkPosition);
+    
+    if (this.cachedWorkContent) {
+      window.addEventListener('scroll', this.checkPosition);
+    }
   }
 
   checkPosition() {
@@ -66,8 +65,8 @@ class App extends React.Component {
     let children = React.Children.map(this.props.children, (child) => {
       return React.cloneElement(child, {
         articleItems: this.state[child.props.routes[1].path]
-      })
-    })
+      });
+    });
 
     return (
       <div className={this.state.mainContainerClasses}>
