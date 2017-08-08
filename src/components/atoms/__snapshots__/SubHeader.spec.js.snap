@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders h3 tag with default header-three class 1`] = `
+<h3
+  className="header-three"
+>
+  Mock text
+</h3>
+`;
+
+exports[`renders h3 tag with text 1`] = `
+<h3
+  className="mock-class"
+>
+  Mock text
+</h3>
+`;
