@@ -2,9 +2,9 @@ import React, {PropTypes} from 'react';
 import { Link, IndexLink } from 'react-router';
 import { BulletList } from '../molecules';
 
-const Header = ({listItems}) => {
+const Header = ({headerClasses, headerNavItems}) => {
   return (
-    <nav id="header" className="header">
+    <nav id="header" className={headerClasses}>
       <IndexLink to="/" id="logo" className="logo" activeClassName="active">
         <img src={require("../../assets/logo.png")} alt="Tracy Lin Logo" />
         <h1 className="page-name">
@@ -14,7 +14,7 @@ const Header = ({listItems}) => {
 
       <BulletList
         styleClass="nav-menu"
-        listItems={listItems}
+        listItems={headerNavItems}
       />
     </nav>
   );

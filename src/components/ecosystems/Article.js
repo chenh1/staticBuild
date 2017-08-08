@@ -5,7 +5,7 @@ import { ImageContainer } from '../molecules';
 
 const Article = ({articleItems}) => {
     return (
-        <div className="standard-article">
+        <div id="articleContent" className="standard-article">
             {articleItems.map((item, index) => {
                 switch (item.type) {
                     case 'image':
