@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {PropTypes} from 'react';
 import { Link, IndexLink } from 'react-router';
 import { TextBlock } from '../organisms';
 import { ImageContainer } from '../molecules';
@@ -31,6 +31,10 @@ const Article = ({articleItems}) => {
             })}
         </div>
     );
+};
+
+Article.propTypes = {
+    articleItems: PropTypes.array.isRequired
 };
 
 export default Article;

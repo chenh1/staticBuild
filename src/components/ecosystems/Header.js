@@ -18,6 +18,11 @@ const Header = ({headerClasses, headerNavItems}) => {
       />
     </nav>
   );
-}
+};
+
+Header.propTypes = {
+  headerClasses: PropTypes.string,
+  headerNavItems: PropTypes.array.isRequired
+};
 
 export default Header;

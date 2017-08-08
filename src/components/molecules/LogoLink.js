@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {PropTypes} from 'react';
 import { IndexLink } from 'react-router';
 
 const LogoLink = ({id, styleClass, activeStyleClass}) => {
@@ -8,6 +8,12 @@ const LogoLink = ({id, styleClass, activeStyleClass}) => {
             <h1 className="page-name">Tracy Lin</h1>
         </IndexLink>
     );
+};
+
+LogoLink.propTypes = {
+    id: PropTypes.string,
+    styleClass: PropTypes.string,
+    activeStyleClass: PropTypes.string
 };
 
 export default LogoLink;

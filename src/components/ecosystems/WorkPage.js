@@ -1,9 +1,9 @@
 import React from 'react';
 
-const WorkPage = ({articleItems}) => {
+const WorkPage = () => {
     return (
         <div/>
     );
-}
+};
 
 export default WorkPage;

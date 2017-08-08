@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {PropTypes} from 'react';
 import { Paragraph, SubHeader } from '../atoms';
 import BulletList from '../molecules/BulletList';
 
@@ -25,6 +25,10 @@ const TextBlock = ({elements}) => {
             })}
         </div>
     );
+};
+
+TextBlock.propTypes = {
+    elements: PropTypes.array.isRequired
 };
 
 export default TextBlock;

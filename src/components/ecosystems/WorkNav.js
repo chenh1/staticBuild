@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {PropTypes} from 'react';
 import { WorkItem } from '../organisms';
 
 const WorkNav = ({workItems}) => {
@@ -15,10 +15,14 @@ const WorkNav = ({workItems}) => {
                         subHeader={workItem.subHeader}
                         description={workItem.description}
                     />
-                )
+                );
             })}
         </div>
     );
+};
+
+WorkNav.propTypes = {
+    workItems: PropTypes.array.isRequired
 };
 
 export default WorkNav;

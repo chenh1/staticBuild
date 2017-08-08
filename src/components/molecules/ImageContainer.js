@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {PropTypes} from 'react';
 import { Image } from '../atoms';
 
 const ImageContainer = ({customClass, imageSrc, alt, caption}) => {
@@ -7,7 +7,14 @@ const ImageContainer = ({customClass, imageSrc, alt, caption}) => {
             <Image imageSrc={imageSrc} alt={alt}/>
             {caption ? <span className="image-caption">{caption}</span> : ""}
         </div>
-    )
+    );
+};
+
+ImageContainer.propTypes = {
+    customClass: PropTypes.string,
+    imageSrc: PropTypes.string.isRequired,
+    alt: PropTypes.string.isRequired,
+    caption: PropTypes.string
 };
 
 export default ImageContainer;

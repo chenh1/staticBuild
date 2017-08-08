@@ -14,12 +14,17 @@ class HomePage extends React.Component {
       flipped: false,
       flipDelay: 20000,
       hideRabbitDelay: 5000
-    }
+    };
 
     this.rabbitTimeout;
     this.hatFlipTimeout;
     this.magicHatAnimation = this.magicHatAnimation.bind(this);
     this.hideRabbit = this.hideRabbit.bind(this);
+  }
+
+  componentWillUnmount() {
+    clearTimeout(this.rabbitTimeout);
+    clearTimeout(this.hatFlipTimeout);
   }
 
   hideRabbit() {
@@ -53,11 +58,6 @@ class HomePage extends React.Component {
     }
   }
 
-  componentWillUnmount() {
-    clearTimeout(this.rabbitTimeout);
-    clearTimeout(this.hatFlipTimeout);
-  }
-
   render() {
     return (
       <div className="intro-content">
@@ -76,6 +76,6 @@ class HomePage extends React.Component {
       </div>
     );
   }
-};
+}
 
 export default HomePage;

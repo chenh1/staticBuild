@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {PropTypes} from 'react';
 import { ListItem } from '../atoms';
 
 const BulletList = ({styleClass = "list-one", listItems}) => {
@@ -15,6 +15,11 @@ const BulletList = ({styleClass = "list-one", listItems}) => {
             )}
         </ul>
     );
+};
+
+BulletList.propTypes = {
+    styleClass: PropTypes.string,
+    listItems: PropTypes.object
 };
 
 export default BulletList;
