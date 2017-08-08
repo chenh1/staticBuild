@@ -2,6 +2,7 @@ import React, {PropTypes} from 'react';
 import {Header, Footer, WorkNav} from './ecosystems';
 import WorkContentApi from '../api/workContentServices';
 import TextContentApi from '../api/textContentServices';
+import CommonContentApi from '../api/commonContentServices';
 
 class App extends React.Component {
   constructor(context) {
@@ -15,12 +16,8 @@ class App extends React.Component {
       about: [],
       mainContainerClasses: "main-container",
       headerClasses: "header",
-      headerNavItems: [
-        {path: "/work", linkClass:"page-link", activeClassName:"active", text:"Work"},
-        {path: "/about", linkClass:"page-link", activeClassName:"active", text:"About"},
-        {path: require("../assets/resume.pdf"), linkClass:"page-link", activeClassName:"active", text:"Resume"}
-      ]
-    }
+      headerNavItems: []
+    };
 
     this.cachedWorkContent = null;
     this.checkPosition = this.checkPosition.bind(this);
@@ -41,13 +38,15 @@ class App extends React.Component {
     const dignityMealsArticleItems = TextContentApi.getDignityMealsContent();
     const abundantLifeArticleItems = TextContentApi.getAbundantLifeContent();
     const aboutArticleItems = TextContentApi.getAboutContent();
+    const headerNavItems = CommonContentApi.getHeaderNavItems();
 
     this.setState({
       workItems: workItems,
       amma: ammaArticleItems,
       "dignity-meals": dignityMealsArticleItems,
       "abundant-life": abundantLifeArticleItems,
-      about: aboutArticleItems
+      about: aboutArticleItems,
+      headerNavItems: headerNavItems
     });
   }
 
