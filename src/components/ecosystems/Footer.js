@@ -1,6 +1,6 @@
 import React, {PropTypes} from 'react';
 import { Link, IndexLink } from 'react-router';
-import CommonContentApi from '../../api/commonContentServices';
+import { CommonContentApi } from '../../api';
 
 class Footer extends React.Component {
     constructor() {

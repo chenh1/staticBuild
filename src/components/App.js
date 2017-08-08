@@ -1,8 +1,6 @@
 import React, {PropTypes} from 'react';
 import {Header, Footer, WorkNav} from './ecosystems';
-import WorkContentApi from '../api/workContentServices';
-import TextContentApi from '../api/textContentServices';
-import CommonContentApi from '../api/commonContentServices';
+import { WorkContentApi, TextContentApi, CommonContentApi } from '../api';
 
 class App extends React.Component {
   constructor(context) {
