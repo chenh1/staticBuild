@@ -19,7 +19,7 @@ const BulletList = ({styleClass = "list-one", listItems}) => {
 
 BulletList.propTypes = {
     styleClass: PropTypes.string,
-    listItems: PropTypes.object
+    listItems: PropTypes.array.isRequired
 };
 
 export default BulletList;

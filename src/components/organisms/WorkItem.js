@@ -17,7 +17,7 @@ WorkItem.propTypes = {
     imageSrc: PropTypes.string.isRequired,
     alt: PropTypes.string.isRequired,
     subHeader: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired
+    description: PropTypes.array.isRequired
 };
 
 export default WorkItem;

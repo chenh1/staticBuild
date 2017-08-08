@@ -12,7 +12,7 @@ const PortfolioInfo = ({subHeaderText, paragraphText}) => {
 
 PortfolioInfo.propTypes = {
     subHeaderText: PropTypes.string.isRequired,
-    paragraphText: PropTypes.string.isRequired
+    paragraphText: PropTypes.array.isRequired
 };
 
 export default PortfolioInfo;
