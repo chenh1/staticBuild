@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders list item with link if path prop exists 1`] = `
+<li>
+  <a
+    className="mock-class"
+    onClick={[Function]}
+    style={Object {}}
+  >
+    Mock list item
+  </a>
+</li>
+`;
+
+exports[`renders list item with text in span tag only if path does not exist 1`] = `
+<li>
+  <span>
+    Mock list item
+  </span>
+</li>
+`;

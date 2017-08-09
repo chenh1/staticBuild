@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders text block which conditionally renders different component types 1`] = `
+<div
+  className="text-wrapper"
+>
+  <p
+    className="paragraph-one"
+  >
+    Mock paragraph text
+    ...more text
+  </p>
+  <h3
+    className="header-three"
+  >
+    Mock subheader text
+  </h3>
+  <ul
+    className="list-one"
+  >
+    <li>
+      <span>
+        list item 1
+      </span>
+    </li>
+    <li>
+      <span>
+        list item 2
+      </span>
+    </li>
+  </ul>
+</div>
+`;

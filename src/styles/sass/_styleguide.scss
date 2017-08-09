@@ -1,0 +1,117 @@
+//Main content styles
+@font-face {
+    font-family: akkurat;
+    src: url(../assets/Akkurat.otf);
+}
+
+html {
+	cursor: url(../assets/wand.png), auto;
+}
+
+body {
+	background-color: $white;
+	font-family: akkurat, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 100;
+	letter-spacing: .2px;
+	margin: 0 auto;
+	max-width: 1024px;
+	overflow-x: hidden;
+}
+
+//Main styleguide rules for individual elements.
+//For default article layout rules, look in _standard-article.scss
+.header-three {
+	color: $bright-pink;
+	font-size: 16px;
+	font-weight: 300;
+	margin-top: 0;
+
+	@media screen and (min-width: $xl) {
+		font-size: 20px;
+	}
+}
+
+.sub-header-one {
+	color: $medium-light-gray;
+	font-size: 14px;
+	font-weight: 800;
+	margin-top: 0;
+
+	@media screen and (min-width: $xl) {
+		font-size: 16px;
+	}
+}
+
+.paragraph-one,
+.list-one {
+	color: $medium-light-gray;
+	font-size: 14px;
+	line-height: 1.65;
+
+	@media screen and (min-width: $xl) {
+		font-size: 16px;
+	}
+}
+
+.list-one {
+	padding-left: 20px;
+}
+
+.page-link,
+.logo,
+.general-link {
+	cursor: pointer;
+	text-decoration: none;
+
+	&:link,
+	&:visited {
+		color: $navy;
+	}
+
+	&:hover {
+		color: $bright-pink;
+	}
+}
+
+.article-link {
+	cursor: pointer;
+	text-decoration: underline;
+
+	&:link,
+	&:visited {
+		color: $medium-light-gray;
+	}
+
+	&:hover {
+		color: $bright-pink;
+	}
+}
+
+.image-caption {
+	color: $medium-light-gray;
+	display: block;
+	font-size: 12px;
+	margin-top: 5px;
+	text-align: center;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.hidden {
+	display: none;
+}
+
+.main-container {
+	//For when the header is docked (removed from container)
+	//Padding is set in place to compensate header position change
+	&.header-docked {
+		padding-top: 99px;
+
+		@media screen and (min-width: $md) {
+			padding-top: 132px;
+		}
+	}
+}
+

@@ -1,0 +1,131 @@
+//Animation for page navigation
+.page-fade {
+	opacity: 0;
+}
+
+//Hover over magic hat
+@-webkit-keyframes hatGlow {
+	0% {
+		-webkit-filter: sepia(0%) hue-rotate(0deg) brightness(100%);
+		filter: sepia(0%) hue-rotate(0deg) brightness(100%);
+	}
+	50% {
+		-webkit-filter: sepia(100%) hue-rotate(180deg) brightness(150%);
+		filter: sepia(100%) hue-rotate(180deg) brightness(150%);
+	}
+}
+
+@keyframes hatGlow {
+	0% {
+		-webkit-filter: sepia(0%) hue-rotate(0deg) brightness(100%);
+		filter: sepia(0%) hue-rotate(0deg) brightness(100%);
+	}
+	50% {
+		-webkit-filter: sepia(100%) hue-rotate(180deg) brightness(150%);
+		filter: sepia(100%) hue-rotate(180deg) brightness(150%);
+	}
+}
+
+//Click magic hat
+@-webkit-keyframes spinHat {
+	0% {
+		transform: rotateZ(0deg);
+	}
+	85% {
+		transform: rotateZ(200deg);
+	}
+	100% {
+		transform: rotateZ(180deg);
+	}
+}
+
+@keyframes spinHat {
+	0% {
+		transform: rotateZ(0deg);
+	}
+	85% {
+		transform: rotateZ(200deg);
+	}
+	100% {
+		transform: rotateZ(180deg);
+	}
+}
+
+.spin-hat {
+	animation: spinHat .3s;
+	animation-fill-mode:forwards;
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation: spinHat .3s;
+	-webkit-animation-fill-mode: forwards;
+}
+
+//Javascript adds empty hat; this class places original hat over the empty hat for fading purposes
+.move-hat-over-empty-hat {
+	opacity: 1;
+	position: absolute;
+	transition: opacity 3s ease-in-out;
+}
+
+.empty-out-hat {
+	opacity: 0;
+}
+
+//Stars Canvas
+@-webkit-keyframes starGlow {
+  from {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}
+
+@keyframes starGlow {
+  from {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}
+
+.stars-overlay {
+	height: 100%;
+	left: 0;
+	opacity: 1;
+	position: fixed;
+	top: 0;
+	transform: translate3d(0, -100%, 0);
+	width: 100vw;
+
+	&.foreground {
+		transition: transform 6s linear, opacity 2s ease-out;
+	}
+
+	&.background {
+		transition: transform 10s linear, opacity 2s ease-out;
+	}
+
+	.star {
+		-webkit-animation: starGlow 1.5s ease-in-out infinite alternate;
+  		-moz-animation: starGlow 1.5s ease-in-out infinite alternate;
+  		animation: starGlow 1.5s ease-in-out infinite alternate;
+		background-color: $white;
+		border-radius: 50%;
+		position: absolute;
+	}
+
+	&.move-canvas {
+		transform: translate3d(0, 0, 0);
+	}
+
+	&.fade-canvas {
+		opacity: 0;
+	}
+}
+
+//Wand animations
+.sparkle-fade {
+	opacity: 0;
+}

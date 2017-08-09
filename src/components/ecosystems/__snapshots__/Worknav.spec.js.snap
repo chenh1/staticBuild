@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders WorkNav 1`] = `
+<div
+  className="work-content"
+  id="workContent"
+>
+  <a
+    className="mock-class"
+    onClick={[Function]}
+    style={Object {}}
+  >
+    <div
+      className="image"
+    >
+      <img
+        alt="mock alt"
+        src="/mockSrc"
+      />
+      
+    </div>
+    <div
+      className="info"
+    >
+      <h3
+        className="header-three"
+      >
+        Mock sub-header text
+      </h3>
+      <p
+        className="paragraph-one"
+      >
+        Mock paragraph text
+      </p>
+    </div>
+  </a>
+</div>
+`;

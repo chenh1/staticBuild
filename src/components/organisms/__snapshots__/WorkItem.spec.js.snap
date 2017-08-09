@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders portfolio item with image and portfolio info components 1`] = `
+<a
+  className="mock-class"
+  onClick={[Function]}
+  style={Object {}}
+>
+  <div
+    className="image"
+  >
+    <img
+      alt="Mock alt tag"
+      src="/mockSrc"
+    />
+    
+  </div>
+  <div
+    className="info"
+  >
+    <h3
+      className="header-three"
+    >
+      Mock Portfolio Item
+    </h3>
+    <p
+      className="paragraph-one"
+    >
+      Some mock description
+    </p>
+  </div>
+</a>
+`;

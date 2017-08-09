@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders header 1`] = `
+<nav
+  className="mock-class"
+  id="header"
+>
+  <a
+    className="logo"
+    id="logo"
+    onClick={[Function]}
+    style={Object {}}
+  >
+    <img
+      alt="Tracy Lin Logo"
+      src="/mockLogoSrc"
+    />
+    <h1
+      className="page-name"
+    >
+      Tracy Lin
+    </h1>
+  </a>
+  <ul
+    className="nav-menu"
+  >
+    <li>
+      <a
+        className="page-link"
+        onClick={[Function]}
+        style={Object {}}
+      >
+        Work
+      </a>
+    </li>
+    <li>
+      <a
+        className="page-link"
+        onClick={[Function]}
+        style={Object {}}
+      >
+        About
+      </a>
+    </li>
+    <li>
+      <a
+        className="page-link"
+        onClick={[Function]}
+        style={Object {}}
+      >
+        Resume
+      </a>
+    </li>
+  </ul>
+</nav>
+`;

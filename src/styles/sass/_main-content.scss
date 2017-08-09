@@ -1,0 +1,234 @@
+.main-content {
+	transition: .2s;
+
+	.intro-content {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin-top: 50px;
+
+		@media screen and (min-width: $sm) {
+			margin-top: 70px;
+			padding: 0 9.2%;	
+		}
+
+		@media screen and (min-width: $md) {
+			align-items: flex-end;
+			flex-direction: row;
+			margin-top: 100px;
+			padding: 0 9.7%;	
+		}
+
+		@media screen and (min-width: $xl) {
+			margin-top: 130px;
+			padding: 0 2% 50px; //0 12%
+		}
+
+		.intro-text {
+			color: $navy;
+			flex-basis: 50%;
+			font-size: 18px;
+			margin-bottom: 64px;
+			padding: 0 13%;
+
+			@media screen and (min-width: $md) {
+				margin-bottom: 0;
+				padding: 0;	
+			}
+
+			@media screen and (min-width: $lg) {
+				font-size: 20px;
+			}
+		}
+
+		.magic-hat {
+			margin-bottom: 14px;
+
+			@media screen and (min-width: $md) {
+				margin-bottom: 0;
+			}
+
+			.rabbit-window {
+				height: 29.4px;
+				overflow: hidden;
+				position: absolute;
+				transform: translateY(197%);
+
+				img {
+					transform: translateY(-100%) rotateZ(180deg);
+					transition: 1.5s;
+				}
+
+				.rabbit-move {
+					transform: translateY(0) rotateZ(180deg);
+				}
+			}
+
+			img {
+				cursor: pointer;
+				vertical-align: bottom;
+				width: 30px;
+
+				&:hover {
+					-webkit-animation: hatGlow 1s infinite;
+					animation: hatGlow 1s infinite;
+				}
+			}
+		}
+	}
+}
+
+.work-content {
+	@media screen and (min-width: $sm) {
+		padding: 0 9.2%;	
+	}
+
+	@media screen and (min-width: $md) {
+		padding: 0 9.7%;	
+	}
+
+	@media screen and (min-width: $xl) {
+		padding: 0 2%; //0 12%
+	}
+}
+
+.portfolio-nav {
+	border-top: 1px solid $light-gray;
+	padding-top: 24px;
+
+	@media screen and (min-width: $sm) {
+		margin-left: 9.2%;
+		margin-right: 9.2%;
+	}
+
+	@media screen and (min-width: $md) {
+		margin-left: 9.7%;
+		margin-right: 9.7%;
+	}
+
+	@media screen and (min-width: $xl) {
+		margin-left: 2%; //12%
+		margin-right: 2%; //12%
+	}
+}
+
+.work-content,
+.portfolio-nav {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 53px;
+
+	@media screen and (min-width: $sm) {
+		margin-top: 100px;
+	}
+
+	@media screen and (min-width: $md) {
+		flex-direction: row;	
+	}
+
+	.portfolio-item {
+		box-sizing: border-box;
+		cursor: pointer;
+		flex-basis: auto; //safari bug
+		flex-shrink: 0; //safari bug
+		margin-bottom: 25px; //18px;
+
+		@media screen and (min-width: $md) {
+			flex-basis: 48.7%;
+		}
+
+		@media screen and (min-width: $xl) {
+			height: 320px;
+		}
+
+		.image {
+			box-sizing: border-box;
+
+			@media screen and (min-width: $xl) {
+				height: 100%;
+			}
+
+			img {
+				width: 100%;
+			}
+		}
+
+		.info {
+			align-items: center;
+			box-sizing: border-box;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			padding: 10% 0;
+			text-align: center;
+			transition: .3s;
+
+			@media screen and (min-width: $xl) {
+				background-color: $bg-hover-gray;
+				border: 1px solid $bright-pink;
+				height: 100%;
+				opacity: 0;
+				transform: translateY(-100%);
+
+				&:hover {
+					opacity: 1;
+				}
+			}
+
+			.header-three {
+				margin-bottom: 0;
+			}
+		}
+
+		&.amma {
+			.paragraph-one {
+				width: 200px;
+
+				@media screen and (min-width: $xs) {
+				    width: 280px;
+				}
+
+				@media screen and (min-width: $xl) {
+				    width: 300px;
+				}
+			}
+		}
+
+		&.dignity-meals {
+			.paragraph-one {
+				width: 224px;
+
+				@media screen and (min-width: $xs) {
+				    width: 300px;
+				}
+
+				@media screen and (min-width: $xl) {
+				    width: 340px;
+				}
+			}
+		}
+
+		&.abundant-life {
+			.paragraph-one {
+				width: 230px;
+
+				@media screen and (min-width: $xl) {
+				    width: 260px;
+				}
+			}
+		}
+
+		&.graphic-design {
+			.paragraph-one {
+				width: 240px;
+
+				@media screen and (min-width: $xl) {
+				    width: 260px;
+				}
+			}
+		}
+	}
+}

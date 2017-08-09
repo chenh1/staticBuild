@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders paragraph tag with default paragraph-one class 1`] = `
+<p
+  className="paragraph-one"
+>
+  Mock text
+</p>
+`;
+
+exports[`renders paragraph tag with embedded link if exists 1`] = `
+<p
+  className="mock-class"
+>
+  Mock text
+  <a
+    className="article-link page-link"
+    data-link-type="externalLink"
+    href="/mockUrl"
+  >
+    text with embedded link
+  </a>
+  more mock text
+</p>
+`;
+
+exports[`renders paragraph tag with text 1`] = `
+<p
+  className="mock-class"
+>
+  Mock text
+</p>
+`;

@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders image container 1`] = `
+<div
+  className="mock-class"
+>
+  <img
+    alt="Mock alt"
+    src="/mockSrc"
+  />
+  
+</div>
+`;
+
+exports[`renders image container with caption span tag if caption prop is available 1`] = `
+<div
+  className="mock-class"
+>
+  <img
+    alt="Mock alt"
+    src="/mockSrc"
+  />
+  <span
+    className="image-caption"
+  >
+    Mock caption
+  </span>
+</div>
+`;

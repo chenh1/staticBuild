@@ -1,0 +1,108 @@
+.header {
+	align-items: flex-end;
+	box-sizing: border-box;
+	display: flex;
+	height: 99px;
+	justify-content: space-between;
+	opacity: .9;
+	padding: 40px 13% 0;
+
+	@media screen and (min-width: $sm) {
+		padding: 40px 9.2% 0;	
+	}
+
+	@media screen and (min-width: $md) {
+		height: 132px;
+		padding: 40px 9.7% 0;
+	}
+
+	@media screen and (min-width: $xl) {
+		padding: 40px 2% 0; //40px 12% 0;
+	}
+
+	&.docked {
+		background-color: $white;
+		border-bottom: 1px solid $light-gray;
+		box-sizing: content-box;
+		height: 90px;
+		left: 50%;
+		max-width: 983.06px; //778px;
+		padding: 6px 100% 10px;
+		position: fixed;
+		top: 0;
+		transform: translateX(-50%);
+		width: 74%;
+		z-index: 100;
+
+		@media screen and (min-width: $sm) {
+			width: 81.6%;
+		}
+
+		@media screen and (min-width: $md) {
+			width: 80.5%;
+		}
+
+		@media screen and (min-width: $xl) {
+			width: 100%;
+		}
+	}
+
+	.logo {
+		cursor: pointer;
+		flex-basis: auto; //safari bug
+		flex-shrink: 0; //safari bug
+
+		&:hover {
+			.page-name {
+				color: $bright-pink;
+			}
+		}
+
+		img {
+			margin-bottom: 5px;
+			margin-left: 3px;
+			width: 52px;
+
+			@media screen and (min-width: $md) {
+				margin-left: 8px;
+			}
+		}
+
+		.page-name {
+			color: $navy;
+			font-size: 14px;
+			font-weight: 100;
+			margin: 0;
+			min-width: 62px;
+
+			@media screen and (min-width: $md) {
+				font-size: 16px;
+			}
+		}
+	}
+
+	.nav-menu {
+		margin: 0;
+		list-style-type: none;
+		padding: 0;
+
+		li {
+			display: inline;
+			font-size: 14px;
+			margin-left: 8px;
+
+			@media screen and (min-width: $xs) {
+				margin-left: 20px; //10%
+			}
+
+			@media screen and (min-width: $sm) {
+				margin-left: 50px; //10%
+			}
+
+			@media screen and (min-width: $md) {
+				font-size: 16px;
+				margin-left: 60px; //10%
+			}
+		}
+	}
+}
