@@ -21,18 +21,4 @@ describe('<HomePage />', () => {
         expect(wrapper.find('.rabbit-move').isEmpty()).toEqual(false);
         expect(wrapper.find('.hidden').isEmpty()).toEqual(true);
     });
-
-    jest.useFakeTimers();
-
-    test('after clicking hat, setTimeout should initiate to reset state', () => {
-        //arrange
-        const wrapper = shallow(<HomePage />);
-
-        //act   
-        wrapper.find('#magicHatContainer').simulate('click');
-        jest.runTimersToTime(24000);
-
-        //assert
-        expect(wrapper.find('#magicHatContainer').hasClass('spin-hat')).toEqual(true);
-    });
 });

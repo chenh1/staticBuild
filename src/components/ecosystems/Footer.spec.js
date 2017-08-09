@@ -38,6 +38,6 @@ describe('<Footer />', () => {
             .simulate('mouseover', {currentTarget: {getAttribute: () => 1}});
 
         //assert
-        expect(wrapper.state.icons[1].imageSrc).toEqual('');
+        expect(wrapper.state.icons[1].imageSrc).toEqual('/mockSrc1');
     })
 });
