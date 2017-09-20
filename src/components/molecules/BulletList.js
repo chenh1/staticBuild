@@ -1,7 +1,7 @@
 import React, {PropTypes} from 'react';
 import { ListItem } from '../atoms';
 
-const BulletList = ({styleClass = "list-one", listItems}) => {
+const BulletList = ({styleClass = "list-one", listItems}) => {    
     return (
         <ul className={styleClass}>
             {listItems.map((listItem, index) => 

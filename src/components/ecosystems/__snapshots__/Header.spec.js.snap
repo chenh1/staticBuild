@@ -29,6 +29,7 @@ exports[`renders header 1`] = `
         className="page-link"
         onClick={[Function]}
         style={Object {}}
+        target=""
       >
         Work
       </a>
@@ -38,6 +39,7 @@ exports[`renders header 1`] = `
         className="page-link"
         onClick={[Function]}
         style={Object {}}
+        target=""
       >
         About
       </a>
@@ -47,6 +49,7 @@ exports[`renders header 1`] = `
         className="page-link"
         onClick={[Function]}
         style={Object {}}
+        target="_blank"
       >
         Resume
       </a>

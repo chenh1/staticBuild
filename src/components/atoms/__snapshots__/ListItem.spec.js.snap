@@ -6,6 +6,7 @@ exports[`renders list item with link if path prop exists 1`] = `
     className="mock-class"
     onClick={[Function]}
     style={Object {}}
+    target=""
   >
     Mock list item
   </a>

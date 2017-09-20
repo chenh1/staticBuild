@@ -36,7 +36,8 @@ class App extends React.Component {
       "dignity-meals": dignityMealsArticleItems,
       "abundant-life": abundantLifeArticleItems,
       about: aboutArticleItems,
-      headerNavItems: headerNavItems
+      headerNavItems: headerNavItems,
+      headerLogo: headerLogo
     });
   }
 

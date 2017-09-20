@@ -5,7 +5,7 @@ const ListItem = ({text, path, linkClass, linkActiveClass}) => {
     return (
         <li>
             {path ? 
-                <Link to={path} className={linkClass} activeClassName={linkActiveClass}>{text}</Link>
+                <Link to={path} className={linkClass} activeClassName={linkActiveClass} target={text === 'Resume' ? '_blank': ''}>{text}</Link>
                 :
                 <span>{text}</span>
             }
